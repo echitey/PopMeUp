@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PopMeUp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,149 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KVf-tz-0Mo">
+                                <rect key="frame" x="32" y="120" width="311" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGE-PC-B5z">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="45"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Other View Controller Popup">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="xYP-vB-bs8" kind="presentation" id="7X8-AH-p4a"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.16078431369999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="qGE-PC-B5z" firstAttribute="leading" secondItem="KVf-tz-0Mo" secondAttribute="leading" id="9Tj-Hg-Mwp"/>
+                                    <constraint firstAttribute="trailing" secondItem="qGE-PC-B5z" secondAttribute="trailing" id="9UE-pI-ZPl"/>
+                                    <constraint firstAttribute="height" constant="45" id="JZ0-pZ-Wc2"/>
+                                    <constraint firstAttribute="width" constant="311" id="WCI-Sy-NC1"/>
+                                    <constraint firstAttribute="bottom" secondItem="qGE-PC-B5z" secondAttribute="bottom" id="bin-zb-ErC"/>
+                                    <constraint firstItem="qGE-PC-B5z" firstAttribute="top" secondItem="KVf-tz-0Mo" secondAttribute="top" id="iG7-7u-VLL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WBS-gp-47k">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HH0-Zx-CKr">
+                                        <rect key="frame" x="105" y="33" width="165" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="165" id="ETB-v7-PFO"/>
+                                            <constraint firstAttribute="height" constant="37" id="ksP-Vk-N9O"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                        <state key="normal" title="Pop Me Up">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.16078431369999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="22b-dd-Ebf"/>
+                                    <constraint firstItem="HH0-Zx-CKr" firstAttribute="centerX" secondItem="WBS-gp-47k" secondAttribute="centerX" id="fji-l0-mYW"/>
+                                    <constraint firstAttribute="bottom" secondItem="HH0-Zx-CKr" secondAttribute="bottom" constant="10" id="zj1-La-HMr"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xco-rt-i61">
+                                <rect key="frame" x="32" y="195" width="311" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8r0-XK-JvP">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="45"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Internal Popup">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13725490196078433" green="0.16078431372549021" blue="0.23921568627450981" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="8r0-XK-JvP" secondAttribute="bottom" id="ATL-Yy-iEg"/>
+                                    <constraint firstAttribute="height" constant="45" id="P1z-8R-cQM"/>
+                                    <constraint firstItem="8r0-XK-JvP" firstAttribute="top" secondItem="Xco-rt-i61" secondAttribute="top" id="XCh-ra-zbd"/>
+                                    <constraint firstItem="8r0-XK-JvP" firstAttribute="leading" secondItem="Xco-rt-i61" secondAttribute="leading" id="b4Q-Zj-Vxq"/>
+                                    <constraint firstAttribute="trailing" secondItem="8r0-XK-JvP" secondAttribute="trailing" id="kle-83-THf"/>
+                                    <constraint firstAttribute="width" constant="311" id="oWR-6H-BZD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WBS-gp-47k" secondAttribute="trailing" id="9fI-uk-ndx"/>
+                            <constraint firstItem="Xco-rt-i61" firstAttribute="top" secondItem="KVf-tz-0Mo" secondAttribute="bottom" constant="30" id="G30-Nt-w80"/>
+                            <constraint firstItem="KVf-tz-0Mo" firstAttribute="top" secondItem="WBS-gp-47k" secondAttribute="bottom" constant="40" id="GcB-ok-o3u"/>
+                            <constraint firstItem="Xco-rt-i61" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wh2-me-c3i"/>
+                            <constraint firstItem="KVf-tz-0Mo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aZN-71-Y1e"/>
+                            <constraint firstItem="WBS-gp-47k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="isR-Pa-jyB"/>
+                            <constraint firstItem="WBS-gp-47k" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tHj-Ot-6S6"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Pop View Controller-->
+        <scene sceneID="edA-pF-eA4">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="xYP-vB-bs8" customClass="PopViewController" customModule="PopMeUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gbl-7G-4C5"/>
+                        <viewControllerLayoutGuide type="bottom" id="zr2-X6-GXe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NzJ-ZS-oIf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xM-c0-9Xq">
+                                <rect key="frame" x="41" y="200.5" width="292" height="266"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="congrats" translatesAutoresizingMaskIntoConstraints="NO" id="GaG-57-TKc">
+                                        <rect key="frame" x="0.0" y="0.0" width="292" height="266"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUX-eb-VqE">
+                                        <rect key="frame" x="0.0" y="225" width="292" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.13725490200000001" green="0.16078431369999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnPressed:" destination="xYP-vB-bs8" eventType="touchUpInside" id="ZnS-KE-Dis"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.16078431369999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="292" id="Jea-3o-190"/>
+                                    <constraint firstAttribute="height" constant="266" id="Taa-oW-0ZD"/>
+                                    <constraint firstAttribute="bottom" secondItem="GaG-57-TKc" secondAttribute="bottom" id="Ucy-8f-X18"/>
+                                    <constraint firstItem="GaG-57-TKc" firstAttribute="leading" secondItem="0xM-c0-9Xq" secondAttribute="leading" id="brS-wS-mac"/>
+                                    <constraint firstAttribute="trailing" secondItem="GaG-57-TKc" secondAttribute="trailing" id="dXZ-5e-fvn"/>
+                                    <constraint firstItem="GaG-57-TKc" firstAttribute="top" secondItem="0xM-c0-9Xq" secondAttribute="top" id="u1f-Im-2nU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.16078431369999999" blue="0.23921568630000001" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0xM-c0-9Xq" firstAttribute="centerY" secondItem="NzJ-ZS-oIf" secondAttribute="centerY" id="C54-ka-qZJ"/>
+                            <constraint firstItem="0xM-c0-9Xq" firstAttribute="centerX" secondItem="NzJ-ZS-oIf" secondAttribute="centerX" id="ElN-sm-sbH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="popView" destination="0xM-c0-9Xq" id="6ux-ru-5eV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7TF-WB-WEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="135.38230884557723"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="congrats" width="358" height="249"/>
+    </resources>
 </document>
