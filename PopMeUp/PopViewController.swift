@@ -16,8 +16,8 @@ class PopViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        popView.layer.cornerRadius = 10;
-        popView.layer.masksToBounds = true;
+        popView.layer.cornerRadius = 10
+        popView.layer.masksToBounds = true
     }
     
     @IBAction func btnPressed(_ sender: Any){
