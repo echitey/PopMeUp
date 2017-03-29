@@ -14,10 +14,13 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var btnCancel: UIButton!
     
+    @IBOutlet var popView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    //Internal PopupView
     @IBAction func openInter(_ sender: Any) {
         self.popConstraint.constant = 0
         
@@ -27,7 +30,7 @@ class ViewController: UIViewController {
         }
     }
     
-    
+
     @IBAction func openBounce(_ sender: Any){
         self.popConstraint.constant = 0
         
@@ -47,6 +50,23 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 0.2) {
             self.view.layoutIfNeeded()
         }
+        
+        popView.removeFromSuperview()
+    }
+    
+    //Scene Dock
+    @IBAction func scneDockPop(_ sender: UIButton) {
+        popView.center = view.center
+        view.addSubview(popView)
+        self.btnCancel.alpha = 0.85
+    }
+    @IBAction func sceneDockPopEffect(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func popViewClose(_ sender: UIButton) {
+        self.btnCancel.alpha = 0
+        popView.removeFromSuperview()
     }
 }
 

@@ -122,8 +122,56 @@
                                     <action selector="btnCancelAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HwK-HQ-l4F"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NeS-gR-V9j">
+                                <rect key="frame" x="32" y="350" width="311" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghW-hy-5Id">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="45"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Scene Dock Popup">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="scneDockPop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mHO-FJ-Zjm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.16078431369999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ghW-hy-5Id" firstAttribute="top" secondItem="NeS-gR-V9j" secondAttribute="top" id="5GP-uj-t7j"/>
+                                    <constraint firstAttribute="height" constant="45" id="C57-lN-n9u"/>
+                                    <constraint firstAttribute="bottom" secondItem="ghW-hy-5Id" secondAttribute="bottom" id="J24-Re-8oB"/>
+                                    <constraint firstItem="ghW-hy-5Id" firstAttribute="leading" secondItem="NeS-gR-V9j" secondAttribute="leading" id="Ryc-G1-hWX"/>
+                                    <constraint firstAttribute="width" constant="311" id="aBS-Gs-Amm"/>
+                                    <constraint firstAttribute="trailing" secondItem="ghW-hy-5Id" secondAttribute="trailing" id="iaL-yD-eMB"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tJi-Kp-8m9">
+                                <rect key="frame" x="32" y="430" width="311" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxw-YH-hGY">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="45"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Scene Dock Popup with Effect">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sceneDockPopEffect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0rr-zt-2Tr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.16078431369999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="2y5-Wc-e7Q"/>
+                                    <constraint firstAttribute="width" constant="311" id="A7d-iW-IT2"/>
+                                    <constraint firstItem="oxw-YH-hGY" firstAttribute="leading" secondItem="tJi-Kp-8m9" secondAttribute="leading" id="WJ5-oM-QRC"/>
+                                    <constraint firstAttribute="trailing" secondItem="oxw-YH-hGY" secondAttribute="trailing" id="aJ1-nm-nsp"/>
+                                    <constraint firstItem="oxw-YH-hGY" firstAttribute="top" secondItem="tJi-Kp-8m9" secondAttribute="top" id="gc9-Gw-f9p"/>
+                                    <constraint firstAttribute="bottom" secondItem="oxw-YH-hGY" secondAttribute="bottom" id="pOQ-RO-uFR"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xCI-OO-jRg">
-                                <rect key="frame" x="41.5" y="1200.5" width="292" height="266"/>
+                                <rect key="frame" x="41" y="1200" width="292" height="266"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="congrats" translatesAutoresizingMaskIntoConstraints="NO" id="VCW-1U-4PY">
                                         <rect key="frame" x="0.0" y="0.0" width="292" height="266"/>
@@ -152,14 +200,6 @@
                                     <constraint firstItem="VCW-1U-4PY" firstAttribute="leading" secondItem="xCI-OO-jRg" secondAttribute="leading" id="uJJ-Ll-hdW"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ok-XW-olh">
-                                <rect key="frame" x="0.0" y="66" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.13725490200000001" green="0.16078431369999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="btnCancelAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jAo-iQ-LhN"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -167,6 +207,8 @@
                             <constraint firstAttribute="trailing" secondItem="WBS-gp-47k" secondAttribute="trailing" id="9fI-uk-ndx"/>
                             <constraint firstItem="Xco-rt-i61" firstAttribute="top" secondItem="KVf-tz-0Mo" secondAttribute="bottom" constant="30" id="G30-Nt-w80"/>
                             <constraint firstItem="KVf-tz-0Mo" firstAttribute="top" secondItem="WBS-gp-47k" secondAttribute="bottom" constant="40" id="GcB-ok-o3u"/>
+                            <constraint firstItem="NeS-gR-V9j" firstAttribute="top" secondItem="sWZ-AM-ryO" secondAttribute="bottom" constant="35" id="H2C-lG-57j"/>
+                            <constraint firstItem="tJi-Kp-8m9" firstAttribute="top" secondItem="NeS-gR-V9j" secondAttribute="bottom" constant="35" id="HjC-NC-bBe"/>
                             <constraint firstItem="sWZ-AM-ryO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KIO-un-CII"/>
                             <constraint firstItem="xCI-OO-jRg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="1000" id="Kxa-GH-X0C"/>
                             <constraint firstItem="eSf-Ge-ewg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Nja-Vv-V4U"/>
@@ -176,18 +218,50 @@
                             <constraint firstItem="KVf-tz-0Mo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aZN-71-Y1e"/>
                             <constraint firstItem="WBS-gp-47k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="isR-Pa-jyB"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eSf-Ge-ewg" secondAttribute="bottom" id="lKg-IC-Bpd"/>
+                            <constraint firstItem="tJi-Kp-8m9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qo9-w3-IrX"/>
                             <constraint firstAttribute="trailing" secondItem="eSf-Ge-ewg" secondAttribute="trailing" id="qzE-2F-yc8"/>
+                            <constraint firstItem="NeS-gR-V9j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sZW-pM-rSX"/>
                             <constraint firstItem="WBS-gp-47k" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tHj-Ot-6S6"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btnCancel" destination="eSf-Ge-ewg" id="pos-X6-YuD"/>
                         <outlet property="popConstraint" destination="Kxa-GH-X0C" id="vMa-iv-9n6"/>
+                        <outlet property="popView" destination="1zL-XV-vsA" id="FcT-u6-ldn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view clipsSubviews="YES" contentMode="scaleToFill" id="1zL-XV-vsA">
+                    <rect key="frame" x="0.0" y="0.0" width="303" height="298"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="congrats" translatesAutoresizingMaskIntoConstraints="NO" id="Xbu-c1-wao">
+                            <rect key="frame" x="0.0" y="0.0" width="303" height="298"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVV-oJ-Rkj">
+                            <rect key="frame" x="0.0" y="268" width="303" height="30"/>
+                            <color key="backgroundColor" red="0.13725490196078433" green="0.16078431372549021" blue="0.23921568627450981" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="CSh-p5-JUM"/>
+                            </constraints>
+                            <state key="normal" title="Close">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="popViewClose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zFY-qT-07I"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="NVV-oJ-Rkj" secondAttribute="trailing" id="FBW-VD-Xud"/>
+                        <constraint firstAttribute="bottom" secondItem="NVV-oJ-Rkj" secondAttribute="bottom" id="eeL-3w-Q0F"/>
+                        <constraint firstItem="NVV-oJ-Rkj" firstAttribute="leading" secondItem="1zL-XV-vsA" secondAttribute="leading" id="ilz-Vk-as5"/>
+                    </constraints>
+                </view>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="98.400000000000006" y="50.824587706146929"/>
         </scene>
         <!--Pop View Controller-->
         <scene sceneID="edA-pF-eA4">
@@ -243,7 +317,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7TF-WB-WEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="900" y="135.38230884557723"/>
+            <point key="canvasLocation" x="908" y="51"/>
         </scene>
     </scenes>
     <resources>
