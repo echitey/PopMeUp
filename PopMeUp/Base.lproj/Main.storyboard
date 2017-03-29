@@ -132,7 +132,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="scneDockPop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mHO-FJ-Zjm"/>
+                                            <action selector="sceneDockPop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Cj-rV-lnb"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -232,15 +232,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <view clipsSubviews="YES" contentMode="scaleToFill" id="1zL-XV-vsA">
-                    <rect key="frame" x="0.0" y="0.0" width="303" height="298"/>
+                    <rect key="frame" x="0.0" y="0.0" width="303" height="366"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="congrats" translatesAutoresizingMaskIntoConstraints="NO" id="Xbu-c1-wao">
-                            <rect key="frame" x="0.0" y="0.0" width="303" height="298"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="congrats" translatesAutoresizingMaskIntoConstraints="NO" id="Xbu-c1-wao">
+                            <rect key="frame" x="0.0" y="0.0" width="303" height="336"/>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVV-oJ-Rkj">
-                            <rect key="frame" x="0.0" y="268" width="303" height="30"/>
+                            <rect key="frame" x="0.0" y="336" width="303" height="30"/>
                             <color key="backgroundColor" red="0.13725490196078433" green="0.16078431372549021" blue="0.23921568627450981" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="CSh-p5-JUM"/>
@@ -255,9 +254,13 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="NVV-oJ-Rkj" firstAttribute="top" secondItem="Xbu-c1-wao" secondAttribute="bottom" id="2m2-Kx-b0r"/>
+                        <constraint firstAttribute="trailing" secondItem="Xbu-c1-wao" secondAttribute="trailing" id="7og-x7-ebP"/>
                         <constraint firstAttribute="trailing" secondItem="NVV-oJ-Rkj" secondAttribute="trailing" id="FBW-VD-Xud"/>
+                        <constraint firstItem="Xbu-c1-wao" firstAttribute="leading" secondItem="1zL-XV-vsA" secondAttribute="leading" id="Vrg-YB-0OK"/>
                         <constraint firstAttribute="bottom" secondItem="NVV-oJ-Rkj" secondAttribute="bottom" id="eeL-3w-Q0F"/>
                         <constraint firstItem="NVV-oJ-Rkj" firstAttribute="leading" secondItem="1zL-XV-vsA" secondAttribute="leading" id="ilz-Vk-as5"/>
+                        <constraint firstItem="Xbu-c1-wao" firstAttribute="top" secondItem="1zL-XV-vsA" secondAttribute="top" id="rj8-pw-UTm"/>
                     </constraints>
                 </view>
             </objects>
